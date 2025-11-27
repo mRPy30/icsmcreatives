@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!---WEB TITLE--->
+    <link rel="short icon" href="../picture/shortcut-logo.png" type="x-icon">
+    <title>Hire Photographers with your sweet memories events | ICSM Creatives</title>
+
+    <!---CSS--->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!--ICON LINKS-->
+    <link rel="stylesheet" href="../font-awesome-6/css/all.css">
+
+    <!--FONT LINKS-->
+    <link rel="stylesheet" href="../css/fonts.css">
+
+</head>
+
+<body>
+    <!-----Navbar------->
+    <header class="header-section">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../picture/logo.png" alt="logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a class="nav" href="../index.html">Home</a>
+            </li>
+            <li>
+                <a class="nav" href="about.html">About</a>
+            </li>
+            <li>
+                <a class="nav" href="contact.html">Contact</a>
+            </li>
+        </ul>
+        <a class="register" href="#"><button>Register</button></a>
+        <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+    </header>
+
+    <div class="title_page">
+        <h1>Book Now to Capture Your Best Moments</h1>
+        <p>Select an event type for photography or videography services.</p>
+    </div>
+
+    <main class="events-container">
+        <!-- Wedding Event -->
+        <div class="event-card">
+            <img src="../picture/marriage1.jpg" alt="Wedding Event">
+            <h3>Wedding</h3>
+            <p>Capture the magic and romance of your special day with our professional wedding photography and videography services.</p>
+        </div>
+
+        <!-- Birthday Event -->
+        <div class="event-card">
+            <img src="../picture/birthday1.jpg" alt="Birthday Event">
+            <h3>Birthday</h3>
+            <p>Celebrate another year of life with beautiful photos and videos that capture the joy and laughter of your birthday party.</p>
+        </div>
+
+        <!-- Baptism Event -->
+        <div class="event-card">
+            <img src="../picture/christening1.jpg" alt="Baptism Event">
+            <h3>Baptism</h3>
+            <p>Document this sacred spiritual milestone with elegant photography that honors the significance of the occasion.</p>
+        </div>
+
+        <!-- Graduation Event -->
+        <div class="event-card">
+            <img src="../picture/corporate.jpg" alt="Graduation Event">
+            <h3>Graduation</h3>
+            <p>Commemorate your academic achievement with professional photos that celebrate your hard work and success.</p>
+        </div>
+
+
+        <!-- Corporate Event -->
+        <div class="event-card">
+            <img src="../picture/corporate.jpg" alt="Corporate Event">
+            <h3>Corporate Event</h3>
+            <p>Professional event coverage for conferences, seminars, team building, and corporate gatherings.</p>
+        </div>
+
+        <!-- Family Portrait Event -->
+        <div class="event-card">
+            <img src="../picture/family.jpg" alt="Family Portrait Event">
+            <h3>Family Portrait</h3>
+            <p>Capture timeless family memories with professional portrait sessions in beautiful settings.</p>
+        </div>
+
+        <!-- Maternity -->
+        <div class="event-card">
+            <img src="../picture/genderreveal4.jpg" alt="Anniversary Event">
+            <h3>Maternity</h3>
+            <p>Capture sweet maternity memories.</p>
+        </div>
+
+        <section class="footer-page">
+            <div class="footer">
+                <div class="footer-row">
+                    <ul class="footer-left-link">
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Offer Events</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="vertical-line-left"></div>
+                <div class="footer-center-content">
+                    <div class="footer-center">
+                        <h6>About ICSM Creatives</h6>
+                        <p>We are dedicated to serving women of color in an underrepresented bridal market. All brides will find inspiration on our blog, in our digital publication, on our social circuit and at our national bridal events.</p>
+
+                        <div class="social-meadia-links">
+                            <h6>Connect with us</h6>
+                            <div class="icons">
+                                <a class="facebook" href="https://www.facebook.com/icsmcreatives" target="_blank">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                                <a class="instagram" href="https://www.instagram.com/icsmcreatives">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a class="tiktok" href="https://www.tiktok.com/@icsm.creatives">
+                                    <i class="fa-brands fa-tiktok"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-line-right"></div>
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="../picture/logo.png" alt="logo">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="going-back">
+            <div class="arrow-up-button back-to-top-hidden">
+                <button class="back-to-top" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></button>
+            </div>
+        </section>
+
+        <section class="container-credential">
+            <div class="credit-info">
+                <div class="rights-definition">
+                    <p>© 2023-2024 ICSMCREATIVES.COM ALL RIGHTS RESERVED. TERMS OF USE | PRIVACY POLICY</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        // Scroll to top functionality
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        // Show/hide back to top button
+        document.addEventListener('DOMContentLoaded', function () {
+            const arrowButton = document.querySelector('.arrow-up-button');
+
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 300) {
+                    arrowButton.classList.remove('back-to-top-hidden');
+                } else {
+                    arrowButton.classList.add('back-to-top-hidden');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
