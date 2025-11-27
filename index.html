@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!---WEB TITLE--->
+    <link rel="short icon" href="picture/shortcut-logo.png" type="x-icon">
+    <title>Online Event Booking | ICSM Creatives</title>
+
+    <!---CSS--->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--ICON LINKS-->
+    <link rel="stylesheet" href="font-awesome-6/css/all.css">
+
+    <!--FONT LINKS-->
+    <link rel="stylesheet" href="css/fonts.css">
+
+</head>
+
+<body>
+    <!-----Navbar------->
+    <header class="header-section">
+        <div class="logo">
+            <a href="index.html">
+                <img src="picture/logo.png" alt="logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a class="nav" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="nav" href="#">About</a>
+            </li>
+            <li>
+                <a class="nav" href="#">Contact</a>
+            </li>
+        </ul>
+        <a class="register" href="client/register.html"><button>Register</button></a>
+        <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+    </header>
+
+    <main class="main-content">
+        <section class="coverpage">
+            <div class="cover-content">
+                <div class="carousel">
+                    <!-- Add your carousel images here -->
+                    <img src="picture/carousel-1.jpg" alt="Carousel Image">
+                    <img src="picture/carousel-2.jpg" alt="Carousel Image">
+                    <img src="picture/carousel-3.jpg" alt="Carousel Image">
+                    <img src="picture/carousel-4.jpg" alt="Carousel Image">
+                    <img src="picture/carousel-5.jpg" alt="Carousel Image">
+                </div>
+                <div class="Center-text">
+                    <h2>HELLO CLIENT!</h2>
+                    <p>Welcome to ICSM Creatives - Creating Memorable Moments</p>
+                    <button id="book-now-btn" class="btn-cover">Book Now</button>
+                </div>
+                <div class="carousel-page-numbers">
+                    <span class="page-number-text">1/5</span>
+                </div>
+                <div class="horizontal-line"></div>
+            </div>
+        </section>
+
+        <section class="milestone-gallery">
+            <div class="milestone-header">
+                <h2>Capture for Every Milestone</h2>
+                <p>Make every occasion unforgettable—start creating your perfect moment today.</p>
+            </div>
+            <div class="milestone-grid">
+                <!-- Wedding Card -->
+                <div class="milestone-card" onclick="location.href='homepage/wedding.html'">
+                    <a href="homepage/wedding.html" class="icon-link">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <h3>Wedding</h3>
+                    <p>Capture the magic of your special day with stunning photography and videography.</p>
+                    <img src="picture/wedding-milestone.jpg" alt="Wedding">
+                </div>
+
+                <!-- Birthday Card -->
+                <div class="milestone-card" onclick="location.href='homepage/birthday.html'">
+                    <a href="homepage/birthday.html" class="icon-link">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <h3>Birthday</h3>
+                    <p>Celebrate another year with memories that last forever.</p>
+                    <img src="picture/birthday-milestone.jpg" alt="Birthday">
+                </div>
+
+                <!-- Baptism Card -->
+                <div class="milestone-card" onclick="location.href='homepage/baptism.html'">
+                    <a href="homepage/baptism.html" class="icon-link">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <h3>Baptism</h3>
+                    <p>Preserve the sacred moments of this spiritual milestone.</p>
+                    <img src="picture/baptism-milestone.jpg" alt="Baptism">
+                </div>
+
+                <!-- Graduation Card -->
+                <div class="milestone-card" onclick="location.href='homepage/graduation.html'">
+                    <a href="homepage/graduation.html" class="icon-link">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <h3>Graduation</h3>
+                    <p>Commemorate your achievements with professional photography.</p>
+                    <img src="picture/graduation-milestone.jpg" alt="Graduation">
+                </div>
+
+                <!-- Browse More Card -->
+                <div class="milestone-card" onclick="location.href='homepage/event.html'">
+                    <a href="homepage/event.html" class="icon-link">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <h3>Browse Other Occasions:</h3>
+                    <p>For every moment, we are here.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose">
+            <div class="choose-us-section">
+                <h2>Why Choose Us?</h2>
+                <div class="features-grid">
+                    <div class="feature-box">
+                        <div class="choose-us-icon">
+                            <img src="picture/icon-professional.png" alt="Professional Icon">
+                        </div>
+                        <div class="choose-us-box-right">
+                            <h3>Professional Team</h3>
+                            <p>Our experienced photographers and videographers deliver exceptional quality for every event.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-box">
+                        <div class="choose-us-icon">
+                            <img src="picture/icon-affordable.png" alt="Affordable Icon">
+                        </div>
+                        <div class="choose-us-box-right">
+                            <h3>Affordable Pricing</h3>
+                            <p>Quality service at competitive rates that fit your budget.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-box">
+                        <div class="choose-us-icon">
+                            <img src="picture/icon-equipment.png" alt="Equipment Icon">
+                        </div>
+                        <div class="choose-us-box-right">
+                            <h3>Modern Equipment</h3>
+                            <p>We use the latest cameras and technology to capture your moments perfectly.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-box">
+                        <div class="choose-us-icon">
+                            <img src="picture/icon-delivery.png" alt="Fast Delivery Icon">
+                        </div>
+                        <div class="choose-us-box-right">
+                            <h3>Fast Delivery</h3>
+                            <p>Get your edited photos and videos quickly without compromising quality.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <div class="how-it-works__container">
+                <h2 class="how-it-works__title">How it Works?</h2>
+
+                <div class="how-it-works__steps-wrapper">
+                    <div class="how-it-works__step-box">
+                        <div class="how-it-works__step-content">
+                            <span class="how-it-works__step-number">01</span>
+                            <h3 class="how-it-works__step-heading">Choose Your Event</h3>
+                            <p class="how-it-works__step-text">Browse our available event packages and select the one that fits your needs.</p>
+                        </div>
+                    </div>
+
+                    <div class="how-it-works__step-box">
+                        <div class="how-it-works__step-content">
+                            <span class="how-it-works__step-number">02</span>
+                            <h3 class="how-it-works__step-heading">Book Your Date</h3>
+                            <p class="how-it-works__step-text">Fill out the booking form with your event details and preferred date.</p>
+                        </div>
+                    </div>
+
+                    <div class="how-it-works__step-box">
+                        <div class="how-it-works__step-content">
+                            <span class="how-it-works__step-number">03</span>
+                            <h3 class="how-it-works__step-heading">Confirm & Pay</h3>
+                            <p class="how-it-works__step-text">Review your booking, make payment, and receive confirmation.</p>
+                        </div>
+                    </div>
+
+                    <div class="how-it-works__step-box">
+                        <div class="how-it-works__step-content">
+                            <span class="how-it-works__step-number">04</span>
+                            <h3 class="how-it-works__step-heading">Enjoy Your Event</h3>
+                            <p class="how-it-works__step-text">Our team will capture every special moment on your big day.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="faq-section__container">
+                <div class="faq-section__left">
+                    <h2 class="faq-section__title">
+                        <span>Have</span>
+                        <span>Questions?</span>
+                    </h2>
+                    <div class="faq-section__image">
+                        <img src="picture/faq-image.png" alt="FAQ Illustration">
+                    </div>
+                </div>
+                <!-- Right Side - Accordion -->
+                <div class="faq-section__right">
+                    <div class="faq-section__item">
+                        <div class="faq-section_question">
+                            How far in advance should I book?
+                            <span class="arrow"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+                        <div class="faq-section_answer">
+                            <p>We recommend booking at least 2-3 months in advance to ensure availability, especially for weddings and major events. However, we do accept last-minute bookings when possible.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-section__item">
+                        <div class="faq-section_question">
+                            What's included in your packages?
+                            <span class="arrow"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+                        <div class="faq-section_answer">
+                            <p>Our packages include professional photography/videography, edited photos and videos, and digital copies. Specific inclusions vary by package - please check our event pages for details.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-section__item">
+                        <div class="faq-section_question">
+                            How long does editing take?
+                            <span class="arrow"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+                        <div class="faq-section_answer">
+                            <p>Typical turnaround time is 2-4 weeks for photos and 4-6 weeks for videos. Rush editing services are available for an additional fee.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-section__item">
+                        <div class="faq-section_question">
+                            Do you offer refunds?
+                            <span class="arrow"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+                        <div class="faq-section_answer">
+                            <p>Refund policies vary based on how far in advance you cancel. Please refer to our terms and conditions or contact us directly for specific information.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-section__item">
+                        <div class="faq-section_question">
+                            Can we customize our package?
+                            <span class="arrow"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+                        <div class="faq-section_answer">
+                            <p>Yes! We're happy to work with you to create a custom package that meets your specific needs and budget. Contact us to discuss your requirements.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ms-testimonials">
+            <h2 class="ms-testimonials-title">What our clients say about us.</h2>
+            <div class="ms-testimonials-wrapper">
+                <div class="ms-testimonial">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p class="ms-testimonial-quote">
+                        ICSM Creatives did an amazing job capturing our wedding day. The team was professional, creative, and made us feel comfortable throughout. Highly recommend!
+                    </p>
+                    <p class="ms-testimonial-author">Maria Santos</p>
+                    <div class="ms-testimonial-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="ms-testimonial">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p class="ms-testimonial-quote">
+                        We hired ICSM for our daughter's debut and they exceeded our expectations. The photos were stunning and the video brought tears to our eyes. Thank you!
+                    </p>
+                    <p class="ms-testimonial-author">Juan dela Cruz</p>
+                    <div class="ms-testimonial-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="ms-testimonial">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p class="ms-testimonial-quote">
+                        Best decision we made for our event! The quality of work is outstanding and they delivered everything on time. Will definitely book again!
+                    </p>
+                    <p class="ms-testimonial-author">Anna Reyes</p>
+                    <div class="ms-testimonial-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star empty-star"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="about-page">
+                <div class="about-left-content">
+                    <div class="about-title">
+                        <h1>Our Mission</h1>
+                        <h5>is to make Life Memorable</h5>
+                    </div>
+                    <div class="about-description">
+                        <p><B>We capture any occasion, easy and fast.</B><br>
+                            Our days are shaped by moments; joyful moments, big important life achievements, but also the ordinary, everyday moments. Anything could be special when you do it with the people closest to you. But sometimes, these moments pass you by.<br><br>
+                            Looking forward to work with you.</p>
+                    </div>
+                    <div class="more-button">
+                        <a href="homepage/about.html"><button>About Us</button></a>
+                    </div>
+                </div>
+
+                <div class="about-right-content">
+                    <div class="image1">
+                        <img src="picture/team.jpg" alt="Team-Picture">
+                    </div>
+                    <div class="image2">
+                        <img src="picture/behind-the-cam.jpg" alt="Behind-the-cam">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="call-to-attention">
+            <div class="banner-homepage">
+                <div class="banner-image">
+                    <img src="picture/CTAcover.jpg" alt="coverpage">
+                </div>
+                <div class="banner-content">
+                    <div class="banner-inner-content">
+                        <h1>Let's make something incredible together</h1>
+                        <div class="CTA-button">
+                            <a href="homepage/event.html"><button>Inquire about your date </button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer-page">
+            <div class="footer">
+                <div class="footer-row">
+                    <ul class="footer-left-link">
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Offer Events</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="vertical-line-left"></div>
+                <div class="footer-center-content">
+                    <div class="footer-center">
+                        <h6>About ICSM Creatives</h6>
+                        <p>We are dedicated to serving women of color in an underrepresented bridal market. All brides will find inspiration on our blog, in our digital publication, on our social circuit and at our national bridal events.</p>
+
+                        <div class="social-meadia-links">
+                            <h6>Connect with us</h6>
+                            <div class="icons">
+                                <a class="facebook" href="https://www.facebook.com/icsmcreatives" target="_blank">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                                <a class="instagram" href="https://www.instagram.com/icsmcreatives">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a class="tiktok" href="https://www.tiktok.com/@icsm.creatives">
+                                    <i class="fa-brands fa-tiktok"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-line-right"></div>
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="picture/logo.png" alt="logo">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="going-back">
+            <div class="arrow-up-button back-to-top-hidden">
+                <button class="back-to-top" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></button>
+            </div>
+        </section>
+
+        <section class="container-credential">
+            <div class="credit-info">
+                <div class="rights-definition">
+                    <p>© 2023-2024 ICSMCREATIVES.COM ALL RIGHTS RESERVED. TERMS OF USE | PRIVACY POLICY</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.querySelectorAll('.faq-section_question').forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                const arrow = header.querySelector('.arrow');
+
+                content.classList.toggle('active');
+                arrow.classList.toggle('active');
+
+                document.querySelectorAll('.faq-section_answer').forEach(otherContent => {
+                    if (otherContent !== content && otherContent.classList.contains('active')) {
+                        otherContent.classList.remove('active');
+                        otherContent.previousElementSibling.querySelector('.arrow').classList.remove('active');
+                    }
+                });
+            });
+        });
+
+        const images = document.querySelectorAll('.carousel img');
+        const pageNumbers = document.querySelectorAll('.carousel-page-numbers .page-number');
+        let idx = 0;
+
+        function showImage(index) {
+            images.forEach((image) => {
+                image.style.display = 'none';
+            });
+
+            images[index].style.display = 'block';
+            idx = index;
+
+            pageNumbers.forEach((pageNumber, i) => {
+                if (i === index) {
+                    pageNumber.classList.add('active');
+                } else {
+                    pageNumber.classList.remove('active');
+                }
+            });
+
+            updatePageNumberText(index);
+        }
+
+        function nextImage() {
+            idx = (idx + 1) % images.length;
+            showImage(idx);
+        }
+
+        function updatePageNumberText(index) {
+            const currentPage = index + 1;
+            const totalPages = images.length;
+            const pageNumberText = document.querySelector('.page-number-text');
+            pageNumberText.textContent = currentPage + '/' + totalPages;
+        }
+
+        setInterval(nextImage, 3000);
+
+        pageNumbers.forEach((pageNumber, index) => {
+            pageNumber.addEventListener('click', () => {
+                showImage(index);
+            });
+        });
+
+        // Arrow up button
+        document.addEventListener('DOMContentLoaded', function () {
+            const arrowButton = document.querySelector('.arrow-up-button');
+            const coverpage = document.querySelector('.coverpage');
+
+            window.addEventListener('scroll', function () {
+                const coverpageRect = coverpage.getBoundingClientRect();
+
+                if (coverpageRect.bottom <= 0) {
+                    arrowButton.classList.remove('back-to-top-hidden');
+                } else {
+                    arrowButton.classList.add('back-to-top-hidden');
+                }
+            });
+        });
+
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const headerSection = document.querySelector('.header-section');
+            const coverContent = document.querySelector('.cover-content');
+            const portfolioSection = document.querySelector('.horizontal-line');
+
+            function handleScroll() {
+                const coverContentRect = coverContent.getBoundingClientRect();
+                const portfolioRect = portfolioSection.getBoundingClientRect();
+
+                if (coverContentRect.bottom > 0 && portfolioRect.top > 0) {
+                    headerSection.classList.add('cover-content-style');
+                } else {
+                    headerSection.classList.remove('cover-content-style');
+                }
+            }
+
+            handleScroll();
+            window.addEventListener('scroll', handleScroll);
+        });
+
+        // Event
+        document.getElementById("book-now-btn").addEventListener("click", function () {
+            window.location.href = "homepage/event.html";
+        });
+
+        // Register
+        const registerBtn = document.getElementById("register");
+        if (registerBtn) {
+            registerBtn.addEventListener("click", function () {
+                window.location.href = "client/register.html";
+            });
+        }
+
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+        const register = document.querySelector('.register');
+
+        function toggleMenu() {
+            hamburgerMenu.classList.toggle('rotate');
+            navLinks.classList.toggle('nav-active');
+        }
+    </script>
+</body>
+
+</html>
